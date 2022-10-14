@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gif</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+        Please use the browser supporting "canvas"
+    </canvas>
+    <br>
+    <!-- 函数库 -->
+    <script src="../webgl_utils/webgl-utils.js"></script>
+    <script src="../webgl_utils/webgl-debug.js"></script>
+    <script src="../webgl_utils/cuon-utils.js"></script>
+    <script src="../webgl_utils/cuon-matrix.js"></script>
+    <!-- JavaScript文件，在<canvas>中绘制图形 -->
+    <script src="../js/gif.js"></script>
+    第一个矩形速度：
+    <input type="button" onclick="up1()" value="↑">
+    <input type="button" onclick="down1()" value="↓">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    背景透明度：
+    <input type="button" onclick="upbackdrop()" value="↑">
+    <input type="button" onclick="downbackdrop()" value="↓"><br>
+    第二个矩形速度：
+    <input type="button" onclick="up2()" value="↑">
+    <input type="button" onclick="down2()" value="↓"><br>
+    第三个矩形速度：
+    <input type="button" onclick="up3()" value="↑">
+    <input type="button" onclick="down3()" value="↓"><br>
+    第四个矩形速度：
+    <input type="button" onclick="up4()" value="↑">
+    <input type="button" onclick="down4()" value="↓"><br>
+    第五个矩形速度：
+    <input type="button" onclick="up5()" value="↑">
+    <input type="button" onclick="down5()" value="↓">
+    
+
+
+</body>
+
+</html>

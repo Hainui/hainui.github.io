@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColoredCube</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="600" height="600">
+        Please use the browser supporting "canvas"
+    </canvas>
+    <br>
+    <!-- 使用gl.ELEMENT_ARRAY_BUFFER来绘制 -->
+    <!-- 函数库 -->
+    <script src="../webgl_utils/webgl-utils.js"></script>
+    <script src="../webgl_utils/webgl-debug.js"></script>
+    <script src="../webgl_utils/cuon-utils.js"></script>
+    <script src="../webgl_utils/cuon-matrix.js"></script>
+    <!-- JavaScript文件，在<canvas>中绘制图形 -->
+    <script src="../js/ColoredCube.js"></script>
+    速度方向：<br>
+    <input type="button" onclick="up()" value="↑">
+    <input type="button" onclick="down()" value="↓">
+    <input type="button" onclick="reverse()" value="reverse"><br>
+    移动物体：<br>
+    <input type="button" onclick="Xl()" value="X⬅️">
+    <input type="button" onclick="Xr()" value="X➡️">
+    <input type="button" onclick="Ys()" value="Y⬆️">
+    <input type="button" onclick="Yx()" value="Y⬇️">
+    <input type="button" onclick="Zl()" value="Z向里">
+    <input type="button" onclick="Zw()" value="Z向外"><br>
+    改变旋转轴：<br>
+    <input type="button" onclick="xx()" value="X轴">
+    <input type="button" onclick="yy()" value="Y轴">
+    <input type="button" onclick="zz()" value="Z轴"><br>
+    缩放：<br>
+    <input type="button" onclick="Xup()" value="X+">
+    <input type="button" onclick="Xdown()" value="X-">
+    <input type="button" onclick="Yup()" value="Y+">
+    <input type="button" onclick="Ydown()" value="Y-">
+    <input type="button" onclick="Zup()" value="Z+">
+    <input type="button" onclick="Zdown()" value="Z-">
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>mechanical_arm</title>
+</head>
+
+<body onload="main()">
+    <canvas id="webgl" width="800" height="500" style="position: absolute;z-index: 0;">
+        Please use the browser supporting "canvas"
+    </canvas>
+    <canvas id="hud" width="800" height="500" style="position: absolute;z-index: 1;">
+        Please use the browser supporting "canvas"
+    </canvas>
+    <br>
+    <p id="xy">XY的坐标</p>
+    <!-- 函数库 -->
+    <script src="../webgl_utils/webgl-utils.js"></script>
+    <script src="../webgl_utils/webgl-debug.js"></script>
+    <script src="../webgl_utils/cuon-utils.js"></script>
+    <script src="../webgl_utils/cuon-matrix.js"></script>
+    <!-- JavaScript文件，在<canvas>中绘制图形 -->
+    <script src="../js/mechanical_arm.js"></script>
+</body>
+
+</html>
